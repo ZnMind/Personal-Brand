@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: radial-gradient(black, #343a40);
+  color: white;
 }
 
 * {
@@ -24,12 +26,98 @@ code {
   border-radius: 5px;
   padding: 0.75rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+  color: black;
+}
+
+.project {
+  height: 100vh;
+  width: 110vh;
+  border-radius: 1em;
+  border: none;
+}
+
+.resume {
+  height: 102vh;
+  width: 75vh;
+  border: none;
+}
+
+#site-link {
+  margin-bottom: 2em;
+}
+
+.pagination {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.dataContainer {
+  text-align: center;
+  
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.project-name {
+  text-align: center;
+  width: 100%;
 }
 
 .container {
-  height: 100vh;
+  height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #61dafb;
+}
+
+.nav-tabs {
+  background-color: white;
+  display: flex;
+  color: #E2E8F0;
+  border-bottom: 1px solid black;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: black;
+  background-color: #1b8600;
+  border-color: transparent;
+  border-bottom-color: black;
+}
+
+.tab-pane {
+  padding: 1em;
+}
+
+.content {
+  background-color: silver;
+  padding-left: 0em;
+  padding-right: 0em;
+  height: 100%;
+}
+
+.tab-content {
+  padding: 2em;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-image: linear-gradient(to bottom right, gray, black);
+  box-shadow: 6px 5px 0.5em black;
+}
+
+.info {
+  margin-bottom: 1em;
 }
