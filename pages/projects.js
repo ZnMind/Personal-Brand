@@ -27,7 +27,7 @@ class Projects extends Component {
             projects: [
                 {
                     name: 'REST API with React Pagination',
-                    link: "https://62cdf15f8c14871d1c5b690c--prismatic-brioche-997f72.netlify.app/",
+                    link: "https://prismatic-brioche-997f72.netlify.app/",
                     code: "https://github.com/ZnMind/React-REST-API-Pagination"
                 },
                 {
@@ -47,7 +47,7 @@ class Projects extends Component {
                 },
                 {
                     name: "Tic-Tac-Toe",
-                    link: "https://62d6e631c01aff028e22f583--jovial-basbousa-0455e3.netlify.app/",
+                    link: "https://jovial-basbousa-0455e3.netlify.app/",
                     code: "https://github.com/ZnMind/TicTacToe"
                 }
             ]
