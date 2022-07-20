@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className={styles.nav}>
             <div className={styles.next}>
                 <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} />
-            </div>
+        </div>
             <div className={styles.next}>
                 <Link href="/">
                     <a className="nav-link">Home</a>

@@ -24,7 +24,8 @@ main {
 code {
   background: #fafafa;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
   color: black;
 }
@@ -53,7 +54,7 @@ code {
 
 .dataContainer {
   text-align: center;
-  
+
 }
 
 h2 {
@@ -74,7 +75,42 @@ h2 {
   align-items: center;
 }
 
-a, a:visited {
+.about-container {
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.about-img {
+  text-align: end;
+  margin-left: auto;
+  margin-right: 2em;
+  width: 25%;
+}
+
+.about {
+  margin-right: auto;
+  text-align: start;
+  width: 25%;
+}
+
+.stack {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+b {
+  color: #61dafb;
+}
+
+.contact {
+  text-align: center;
+}
+
+a,
+a:visited {
   text-decoration: none;
   color: white;
 }
@@ -90,7 +126,8 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
   color: black;
   background-color: #1b8600;
   border-color: transparent;
@@ -120,4 +157,71 @@ a:hover {
 
 .info {
   margin-bottom: 1em;
+}
+
+.container-react {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-logo {
+  display: inline-block;
+  border-radius: 50%;
+
+  border: 10px solid #00d8ff;
+
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.react-logo,
+.react-logo:before,
+.react-logo:after {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #00d8ff;
+}
+
+.nucleo,
+.react-logo,
+.react-logo:before,
+.react-logo:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nucleo {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #00d8ff;
+}
+
+.react-logo:before,
+.react-logo:after {
+  content: "";
+}
+
+.react-logo:after {
+  transform: rotate(-57deg);
+}
+
+.react-logo:before {
+  transform: rotate(57deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
