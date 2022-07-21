@@ -7,7 +7,7 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <div className="container">
+            <div className="about-container">
                 <Layout title="About">
                     <h3>Profile</h3>
                     <div className="about-container">
