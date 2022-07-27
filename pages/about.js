@@ -59,7 +59,7 @@ const About = () => {
                     </div>
                     <div className="contact">
                         <h3>Contact Me</h3>
-                        <p>tech.dmann@gmail.com</p>
+                        <a href="mailto:tech.dmann@gmail.com?cc=damann1072@gmail.com&subject=Great%20Website!">tech.dmann@gmail.com</a>
                         <p>(205) 936-3366</p>
                     </div>
                 </Layout>

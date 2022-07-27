@@ -28,37 +28,44 @@ class Projects extends Component {
                 {
                     name: 'REST API with React Pagination',
                     link: "https://prismatic-brioche-997f72.netlify.app/",
-                    code: "https://github.com/ZnMind/React-REST-API-Pagination"
+                    code: "https://github.com/ZnMind/React-REST-API-Pagination",
+                    format: "cc"
                 },
                 {
                     name: 'Custom QR Code',
                     link: "https://timely-monstera-26381f.netlify.app/",
-                    code: "https://github.com/ZnMind/QR-code"
+                    code: "https://github.com/ZnMind/QR-code",
+                    format: ""
                 },
                 {
                     name: 'Dicey Business',
                     link: "https://62cf08ce80ae69195086b433--fanciful-torte-f1a151.netlify.app/",
-                    code: "https://github.com/ZnMind/Dicey-Business"
+                    code: "https://github.com/ZnMind/Dicey-Business",
+                    format: ""
                 },
                 {
                     name: 'Just My Type',
                     link: "https://62cf17b7e731572c6daa4ae0--magenta-mochi-f86254.netlify.app/",
-                    code: "https://github.com/ZnMind/Just-My-Type"
+                    code: "https://github.com/ZnMind/Just-My-Type",
+                    format: "typing"
                 },
                 {
                     name: 'REST API with Routers',
                     link: 'https://62d081534791ac2c0f000eb6--velvety-lily-38f01f.netlify.app/',
-                    code: "https://github.com/ZnMind/Reacting-to-Routers"
+                    code: "https://github.com/ZnMind/Reacting-to-Routers",
+                    format: ""
                 },
                 {
                     name: "Tic-Tac-Toe",
                     link: "https://jovial-basbousa-0455e3.netlify.app/",
-                    code: "https://github.com/ZnMind/TicTacToe"
+                    code: "https://github.com/ZnMind/TicTacToe",
+                    format: ""
                 },
                 {
                     name: "Inception",
                     link: "https://dmann.netlify.app",
-                    code: "https://github.com/ZnMind/Personal-Brand"
+                    code: "https://github.com/ZnMind/Personal-Brand",
+                    format: "cc"
                 }
             ]
         }

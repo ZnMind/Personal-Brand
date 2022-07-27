@@ -31,8 +31,22 @@ code {
 }
 
 .project {
+  height: 90vh;
+  width: 100vh;
+  border-radius: 1em;
+  border: none;
+}
+
+.projectcc {
   height: 100vh;
-  width: 110vh;
+  width: 100vh;
+  border-radius: 1em;
+  border: none;
+}
+
+.projecttyping {
+  height: 90vh;
+  width: 140vh;
   border-radius: 1em;
   border: none;
 }

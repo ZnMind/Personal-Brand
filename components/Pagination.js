@@ -86,7 +86,7 @@ const Pagination = data => {
                                 Code
                             </a>
                         </div>
-                        <iframe src={data.link} className='project' id={`target${index}`}></iframe>
+                        <iframe src={data.link} className={`project${data.format}`} id={`target${index}`}></iframe>
                     </div>
                 ))}
             </div>
