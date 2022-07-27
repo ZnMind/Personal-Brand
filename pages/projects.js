@@ -31,6 +31,11 @@ class Projects extends Component {
                     code: "https://github.com/ZnMind/React-REST-API-Pagination"
                 },
                 {
+                    name: 'Custom QR Code',
+                    link: "https://timely-monstera-26381f.netlify.app/",
+                    code: "https://github.com/ZnMind/QR-code"
+                },
+                {
                     name: 'Dicey Business',
                     link: "https://62cf08ce80ae69195086b433--fanciful-torte-f1a151.netlify.app/",
                     code: "https://github.com/ZnMind/Dicey-Business"
@@ -49,6 +54,11 @@ class Projects extends Component {
                     name: "Tic-Tac-Toe",
                     link: "https://jovial-basbousa-0455e3.netlify.app/",
                     code: "https://github.com/ZnMind/TicTacToe"
+                },
+                {
+                    name: "Inception",
+                    link: "https://dmann.netlify.app",
+                    code: "https://github.com/ZnMind/Personal-Brand"
                 }
             ]
         }

@@ -4,7 +4,6 @@ import styles from './Pagination.module.css';
 const Pagination = data => {
     const [pages] = useState(Math.round(data.data.length / 1))
     const [currentPage, setCurrentPage] = useState(1);
-    const [loaded, setLoaded] = useState(false);
 
     function goToNextPage() {
         setCurrentPage((page) => page + 1);
@@ -15,9 +14,8 @@ const Pagination = data => {
     }
 
     function changePage(event) {
-        const id = event.target.innerHTML.split('"')[1]
+        //const id = event.target.innerHTML.split('"')[1]
         const pageNumber = Number(event.target.innerText);
-        console.log(id)
         setCurrentPage(pageNumber);
     }
 
@@ -28,9 +26,12 @@ const Pagination = data => {
     };
 
     const getPaginationGroup = () => {
-        if(!loaded) {
-            //setLoaded(true);
-            return new Array(5).fill().map((_, idx) => idx + 1);
+        if (currentPage <= 3) {
+            return new Array(5).fill().map((_, index) => index + 1)
+        } else if (currentPage >= data.data.length - 2) {
+            return new Array(5).fill(data.data.length).map((element, index) => element - (4 - index))
+        } else {
+            return new Array(5).fill(currentPage - 2).map((element, index) => element + index)
         }
     };
 
@@ -66,7 +67,7 @@ const Pagination = data => {
                 {/* next button */}
                 <button
                     onClick={goToNextPage}
-                    className={`${styles.next} ${currentPage == 5 ? styles.disabled : ''}`}
+                    className={`${styles.next} ${currentPage == 7 ? styles.disabled : ''}`}
                 >
                     next
                 </button>
