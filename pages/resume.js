@@ -9,7 +9,7 @@ const Resume = () => {
             <Navbar />
             <Layout title="Resume">
                 <div>
-                    <iframe src="/images/Dan Mann Resume 2022.pdf#toolbar=0&navpanes=0&scrollbar=0" className="resume"></iframe>
+                    <iframe src="/images/dmann2022.pdf#toolbar=0&navpanes=0&scrollbar=0" className="resume"></iframe>
                 </div>
             </Layout>
             <Footer />
