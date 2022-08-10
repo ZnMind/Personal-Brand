@@ -11,7 +11,7 @@ export default function Footer() {
         
         <div className={styles.next}>
 
-          <Link href="https://github.com/ZnMind?tab=repositories">
+          <Link href="https://github.com/ZnMind">
             <a className={styles.logo} target="_blank">
               <img src="/images/GH.svg" width={"30px"} height={"40px"} />
             </a>
