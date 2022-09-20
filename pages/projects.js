@@ -32,6 +32,12 @@ class Projects extends Component {
                     format: "cc"
                 },
                 {
+                    name: "Progress Bars OOP/DOM",
+                    link: "https://delicate-dodol-627aed.netlify.app/",
+                    code: "https://github.com/ZnMind/Progress-Bars",
+                    format: ""
+                },
+                {
                     name: 'Custom QR Code',
                     link: "https://timely-monstera-26381f.netlify.app/",
                     code: "https://github.com/ZnMind/QR-code",
@@ -75,7 +81,6 @@ class Projects extends Component {
         return (
             <>
                 <Navbar />
-
                 <Layout title="Projects">
                     <h2>Projects</h2>
                     <div className='d-flex justify-center'>

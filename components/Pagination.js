@@ -67,7 +67,7 @@ const Pagination = data => {
                 {/* next button */}
                 <button
                     onClick={goToNextPage}
-                    className={`${styles.next} ${currentPage == 7 ? styles.disabled : ''}`}
+                    className={`${styles.next} ${currentPage == pages ? styles.disabled : ''}`}
                 >
                     next
                 </button>
@@ -83,7 +83,7 @@ const Pagination = data => {
                         </div>
                         <div className="info">
                             <a href={data.code} target='_blank' id='site-link'>
-                                Code
+                                Source Code
                             </a>
                         </div>
                         <iframe src={data.link} className={`project${data.format}`} id={`target${index}`}></iframe>
