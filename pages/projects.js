@@ -26,6 +26,12 @@ class Projects extends Component {
         this.state = {
             projects: [
                 {
+                    name: "Puppeteer/Express Webscraping",
+                    link: "https://netlify-heroku-express-backend.netlify.app/",
+                    code: "https://github.com/ZnMind/Puppeteer-React-Webscraping",
+                    format: "pup"
+                },
+                {
                     name: 'REST API with React Pagination',
                     link: "https://prismatic-brioche-997f72.netlify.app/",
                     code: "https://github.com/ZnMind/React-REST-API-Pagination",
