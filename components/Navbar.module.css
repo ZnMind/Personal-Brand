@@ -4,9 +4,10 @@
     border-bottom: 1px solid #eaeaea;
     display: flex;
     align-items: center;
+    justify-content: center safe;
     flex-wrap: wrap;
-    
     top: 0;
+    padding-left: calc(100vw - 100%);
   }
   
   .logo {
@@ -21,6 +22,6 @@
   }
   
   .next {
-    margin: 1em;
+    margin: 1em; 
   }
   
