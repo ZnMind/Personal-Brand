@@ -3,16 +3,18 @@ import styles from '@components/Pagination.module.css';
 import Layout from "@components/Layout";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
+import Anchor from "@components/Anchor";
 
 const Pagination = props => {
     const [pages] = useState(4);
     const [currentPage, setCurrentPage] = useState(1);
+    const [headers] = useState({ 1: "Me", 2: "Wife", 3: "Pup", 4: "Family" })
 
-    function goToNextPage() {
+    const goToNextPage = () => {
         setCurrentPage((page) => page + 1);
     }
 
-    function goToPreviousPage() {
+    const goToPreviousPage = () => {
         setCurrentPage((page) => page - 1);
     }
 
@@ -30,6 +32,8 @@ const Pagination = props => {
                     onClick={goToPreviousPage}
                     className={`${styles.arrowbutton} ${styles.arrowbuttonL} ${currentPage == 1 ? styles.disabled : ''}`}
                 />
+
+                <h3>{headers[currentPage]}</h3>
 
                 {/* next button */}
                 <button
@@ -54,7 +58,6 @@ const Pagination = props => {
 const Page1 = () => {
     return (
         <>
-            <h3>Me</h3>
             <div className="about-container1">
                 <div className="about-img">
                     <img src="/images/Dan.jpg" height="480" width="640"></img>
@@ -112,32 +115,15 @@ const Page1 = () => {
 }
 
 const Page2 = () => {
-    return (
-        <>
-            <h3>Wife</h3>
-            <img src="/images/Kait.jpg" height="600" width="800"></img>
-            {/* <img src="/images/Wedding.jpg" height="600" width="800"></img> */}
-        </>
-    )
+    return <img src="/images/Kait.jpg" height="600" width="800"></img>
 }
 
 const Page3 = () => {
-    return (
-        <>
-            <h3>Pup</h3>
-            <img src="/images/Pup.jpg" height="640" width="480"></img>
-
-        </>
-    )
+    return <img src="/images/Pup.jpg" height="640" width="480"></img>
 }
 
 const Page4 = () => {
-    return (
-        <>
-            <h3>Family</h3>
-            <img src="/images/Family.jpg" height="533.5" width="800"></img>
-        </>
-    )
+    return <img src="/images/Family.jpg" height="533.5" width="800"></img>
 }
 
 const components = {
@@ -148,7 +134,6 @@ const components = {
 }
 
 const About = () => {
-    const [currentPage, setCurrentPage] = useState('page1');
     const [pages] = useState([
         <components.page1 />,
         <components.page2 />,
@@ -167,6 +152,11 @@ const About = () => {
                     />
                 </Layout>
             </div>
+            <Anchor
+                text="Page Source"
+                href="https://github.com/ZnMind/Personal-Brand/blob/main/pages/about.js"
+                className="anchor-link"
+            />
             <Footer />
         </>
     )

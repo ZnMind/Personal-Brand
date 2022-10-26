@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer'
 import Pagination from '../components/Pagination';
+import Anchor from '@components/Anchor';
 
 class Projects extends Component {
     async componentDidMount() {
@@ -11,13 +12,7 @@ class Projects extends Component {
 
     async loadProjects() {
         if (typeof window !== 'undefined') {
-            /* for (let i = 0; i < this.state.projects.length; i++) {
-                var div = document.getElementById(`target${i}`)
-                div.onload = function () {
-                    div.style.height = "100vh";
-                    div.style.width = "110vh"
-                }
-            } */
+
         }
     }
 
@@ -95,6 +90,11 @@ class Projects extends Component {
                         />
                     </div>
                 </Layout>
+                <Anchor
+                    text="Page Source"
+                    href="https://github.com/ZnMind/Personal-Brand/blob/main/pages/projects.js"
+                    className="anchor-link"
+                />
                 <Footer />
             </>
         )

@@ -4,6 +4,7 @@ import Footer from '@components/Footer';
 import Layout from '@components/Layout';
 import Navbar from '../components/Navbar';
 import Logo from '@components/Logo';
+import Anchor from '@components/Anchor';
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
         </Layout>
         <Logo />
       </div>
+      <Anchor
+        text="Page Source"
+        href="https://github.com/ZnMind/Personal-Brand"
+        className="anchor-link"
+      />
       <Footer />
     </>
   )

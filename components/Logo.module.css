@@ -10,9 +10,7 @@
   .reactLogo {
     display: inline-block;
     border-radius: 50%;
-  
     border: 10px solid #00d8ff;
-  
     animation-name: rotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;

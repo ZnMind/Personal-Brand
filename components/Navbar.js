@@ -31,6 +31,15 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={styles.next}>
+                    <Link href="/projects">
+                    <a className={
+                            `nav-link ${currentRoute === "/projects"
+                                ? "active"
+                                : "non-active"}`
+                        }>Projects</a>
+                    </Link>
+                </div>
+                <div className={styles.next}>
                     <Link href="/resume">
                     <a className={
                             `nav-link ${currentRoute === "/resume"
@@ -40,12 +49,12 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={styles.next}>
-                    <Link href="/projects">
+                    <Link href="/certificates">
                     <a className={
-                            `nav-link ${currentRoute === "/projects"
+                            `nav-link ${currentRoute === "/certificates"
                                 ? "active"
                                 : "non-active"}`
-                        }>Projects</a>
+                        }>Certificates</a>
                     </Link>
                 </div>
                 <style jsx>{`
