@@ -11,17 +11,15 @@ const Pagination = props => {
     const [headers] = useState({ 1: "Innovate Birmingham", 2: "AIDT" })
 
     const goToNextPage = () => {
-        setCurrentPage(page => page += 1);
+        setCurrentPage(page => page + 1);
     }
 
     const goToPreviousPage = () => {
-        setCurrentPage((page) => page - 1);
+        setCurrentPage(page => page - 1);
     }
 
     const getPaginatedData = () => {
-        const startIndex = currentPage - 1;
-        const endIndex = startIndex + 1;
-        return props.data.slice(startIndex, endIndex);
+        return props.data.slice(currentPage - 1, currentPage);
     };
 
     return (
@@ -56,19 +54,11 @@ const Pagination = props => {
 }
 
 const Cert1 = () => {
-    return (
-        
-            <iframe src="/images/DANIELMANN.pdf#toolbar=0&navpanes=0&scrollbar=0" className="certificate" height="605" width="795"></iframe>
-        
-    )
+    return <iframe src="/images/DANIELMANN.pdf#toolbar=0&navpanes=0&scrollbar=0" className="certificate" height="605" width="795"></iframe>
 }
 
 const Cert2 = () => {
-    return (
-        <div>
-            <iframe src="/images/AIDT Leadership Cert.pdf#toolbar=0&navpanes=0&scrollbar=0" className="certificate" height="605" width="795"></iframe>
-        </div>
-    )
+    return <iframe src="/images/AIDT Leadership Cert.pdf#toolbar=0&navpanes=0&scrollbar=0" className="certificate" height="605" width="795"></iframe>
 }
 
 const components = {
@@ -85,7 +75,7 @@ const Certificates = () => {
     return (
         <>
             <Navbar />
-            <Layout title="Resume">
+            <Layout title="Certificates">
                 <Pagination
                     data={certs}
                 />

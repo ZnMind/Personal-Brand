@@ -31,6 +31,15 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={styles.next}>
+                    <Link href="/message">
+                    <a className={
+                            `nav-link ${currentRoute === "/message"
+                                ? "active"
+                                : "non-active"}`
+                        }>Messages</a>
+                    </Link>
+                </div>
+                <div className={styles.next}>
                     <Link href="/projects">
                     <a className={
                             `nav-link ${currentRoute === "/projects"
@@ -57,6 +66,7 @@ const Navbar = () => {
                         }>Certificates</a>
                     </Link>
                 </div>
+                
                 <style jsx>{`
                 nav { 
                     display: flex;

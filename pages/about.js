@@ -11,11 +11,11 @@ const Pagination = props => {
     const [headers] = useState({ 1: "Me", 2: "Wife", 3: "Pup", 4: "Family" })
 
     const goToNextPage = () => {
-        setCurrentPage((page) => page + 1);
+        setCurrentPage(page => page + 1);
     }
 
     const goToPreviousPage = () => {
-        setCurrentPage((page) => page - 1);
+        setCurrentPage(page => page - 1);
     }
 
     const getPaginatedData = () => {

@@ -24,6 +24,7 @@ export default function Home() {
           <p>Check out the Navbar to get started or click on my links in the footer below</p>
         </Layout>
         <Logo />
+        <p>Powered by <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>Next.js</a> / <a href='https://reactjs.org/' target='_blank' rel='noreferrer'>React</a></p>
       </div>
       <Anchor
         text="Page Source"

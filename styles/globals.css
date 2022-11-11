@@ -63,9 +63,7 @@ code {
 }
 
 .resume {
-  height: 97vh;
-  width: 75vh;
-  border: none;
+  box-shadow: 6px 5px 1.5em gray;
 }
 
 .certificate {
@@ -224,4 +222,52 @@ a:hover {
 .anchor-div {
   display: flex;
   justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  flex-wrap: wrap;
+}
+
+input {
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+button {
+  width: 5em;
+  margin-bottom: 5em;
 }
