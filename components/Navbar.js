@@ -74,6 +74,7 @@ const Navbar = () => {
                     align-items: center;
                     flex-direction: row;
                     box-shadow: 0 5px 10px #ccc;
+                    margin-bottom: 15px;
                   }
                   
                   nav a {

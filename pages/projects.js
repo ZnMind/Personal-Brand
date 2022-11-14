@@ -12,7 +12,7 @@ class Projects extends Component {
 
     async loadProjects() {
         if (typeof window !== 'undefined') {
-
+            console.log("Huzzah!!")
         }
     }
 

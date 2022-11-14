@@ -1,7 +1,14 @@
 .card {
     display: flex;
     align-items: flex-start;
+    border-bottom: 1px solid white;
+}
+
+.replycard {
+    display: flex;
+    align-items: flex-start;
     border-bottom: 1px solid black;
+    margin-left: 5em;
 }
 
 .column1 {
@@ -19,4 +26,18 @@
     color: black;
     font-size: small;
     text-align: start;
+}
+
+.reply {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-bottom: 1em;
+}
+
+.inputs {
+    width: 20em;
 }

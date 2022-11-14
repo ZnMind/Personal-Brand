@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import MessageCard from '@components/MessageCard';
 import Navbar from '@components/Navbar';
+import Layout from '@components/Layout';
 import Footer from '@components/Footer';
+import Anchor from '@components/Anchor';
+import ReplyCard from '@components/ReplyCard';
 
 const Message = () => {
     const [data, setData] = useState([]);
+    const [replies, setReplies] = useState([]);
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [user, setUser] = useState("");
     const [time, setTime] = useState("");
+    const [toggle, setToggle] = useState("");
 
     useEffect(() => {
         fetch("https://vercel-express-znmind.vercel.app/api/message")
@@ -20,6 +25,16 @@ const Message = () => {
                     details[i]._created = new Date(date).toString().split("G")[0]
                 }
                 setData(details)
+            })
+        fetch("https://vercel-express-znmind.vercel.app/api/message/reply/all")
+            .then(res => res.json())
+            .then(details => {
+                var date;
+                for (let i = 0; i < details.length; i++) {
+                    date = Date.parse(details[i]._created)
+                    details[i]._created = new Date(date).toString().split("G")[0]
+                }
+                setReplies(details);
             })
     }, []);
 
@@ -68,7 +83,6 @@ const Message = () => {
     }
 
     const handleSortBy = () => {
-        console.log(user);
         fetch(`https://vercel-express-znmind.vercel.app/api/message/${user}`)
             .then(res => res.json())
             .then(details => {
@@ -79,6 +93,10 @@ const Message = () => {
                 }
                 setData(details)
             })
+    }
+
+    const handleToggle = () => {
+        setToggle(!toggle);
     }
 
     return (
@@ -98,7 +116,16 @@ const Message = () => {
                                 <button onClick={handleSortBy}>Sort</button>
                                 <button onClick={() => window.location.href = "/message"}>All</button>
                             </div>
-
+                            <Anchor
+                                text="Vercel Server"
+                                href="https://github.com/ZnMind/Vercel-Express"
+                                className="anchor-link-sm"
+                            />
+                            <Anchor
+                                text="Page Source"
+                                href="https://github.com/ZnMind/Personal-Brand/blob/main/pages/message.js"
+                                className="anchor-link-sm"
+                            />
                         </div>
                         <div className='right'>
                             {name || message
@@ -111,19 +138,33 @@ const Message = () => {
 
                             {data.map((data, index) => {
                                 return (
-
                                     <div key={index}>
                                         <MessageCard
                                             key={`${index}card`}
+                                            replyId={data.id}
                                             username={data.username}
                                             message={data.message}
                                             created={data._created}
+                                            toggle={toggle}
+                                            onClick={handleToggle}
                                         />
+                                        {replies.map((rep, index) => {
+                                            return (
+                                                data.id == rep.replyid ?
+                                                    <div key={index}>
+                                                        <ReplyCard
+                                                            username={rep.username}
+                                                            message={rep.message}
+                                                            created={rep._created}
+                                                        />
+                                                    </div> :
+                                                    ""
+                                            );
+                                        })}
                                     </div>
-
                                 )
                             })}
-
+                            <div className='bott'></div>
                         </div>
                     </div>
                 </header>
