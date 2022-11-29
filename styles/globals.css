@@ -74,6 +74,14 @@ code {
   margin-bottom: 2em;
 }
 
+#hero-link {
+  color: #61dafb;
+}
+
+#hero-link:hover {
+  color: #0066ff;
+}
+
 .pagination {
   text-align: center;
   margin-bottom: 2em;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
 
-const Pagination = data => {
-    const [pages] = useState(Math.round(data.data.length / 1))
+const Pagination = props => {
+    const [pages] = useState(Math.round(props.data.length / 1))
     const [currentPage, setCurrentPage] = useState(1);
 
     function goToNextPage() {
@@ -22,14 +22,14 @@ const Pagination = data => {
     const getPaginatedData = () => {
         const startIndex = currentPage * 1 - 1;
         const endIndex = startIndex + 1;
-        return data.data.slice(startIndex, endIndex);
+        return props.data.slice(startIndex, endIndex);
     };
 
     const getPaginationGroup = () => {
         if (currentPage <= 3) {
             return new Array(5).fill().map((_, index) => index + 1)
-        } else if (currentPage >= data.data.length - 2) {
-            return new Array(5).fill(data.data.length).map((element, index) => element - (4 - index))
+        } else if (currentPage >= props.data.length - 2) {
+            return new Array(5).fill(props.data.length).map((element, index) => element - (4 - index))
         } else {
             return new Array(5).fill(currentPage - 2).map((element, index) => element + index)
         }
@@ -86,6 +86,17 @@ const Pagination = data => {
                                 Source Code
                             </a>
                         </div>
+                        {data.name == "Puppeteer/Express Webscraping" ?
+                            <div className="info">
+                                Heroku is set to <a href="https://blog.heroku.com/next-chapter" target='_blank' id='hero-link'>end free dynos</a> November 28.
+                                <div>
+                                This project is experiencing slowdowns as a result, and
+                                </div>
+                                <div>
+                                it's server will need to be migrated to another free hosting service.
+                                </div>
+                            </div> :
+                            ""}
                         <iframe src={data.link} className={`project${data.format}`} id={`target${index}`}></iframe>
                     </div>
                 ))}
