@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MessageCard from '@components/MessageCard';
 import Navbar from '@components/Navbar';
-import Layout from '@components/Layout';
+import Head from 'next/head';
 import Footer from '@components/Footer';
 import Anchor from '@components/Anchor';
 import ReplyCard from '@components/ReplyCard';
@@ -102,6 +102,7 @@ const Message = () => {
     return (
         <>
             <Navbar />
+            <Head><title>Messages - Dan Mann</title></Head>
             <div className="App">
                 <header className="App-header">
                     <div className='message-container'>
