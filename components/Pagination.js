@@ -93,7 +93,7 @@ const Pagination = props => {
                                 This project is experiencing slowdowns as a result, and
                                 </div>
                                 <div>
-                                it's server will need to be migrated to another free hosting service.
+                                its server will need to be migrated to another free hosting service.
                                 </div>
                             </div> :
                             ""}
