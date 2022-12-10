@@ -86,7 +86,7 @@ const Pagination = props => {
                                 Source Code
                             </a>
                         </div>
-                        {data.name == "Puppeteer/Express Webscraping" ?
+                        {data.name == 'Puppeteer/Express Webscraping' ?
                             <div className="info">
                                 Heroku is set to <a href="https://blog.heroku.com/next-chapter" target='_blank' id='hero-link'>end free dynos</a> November 28.
                                 <div>

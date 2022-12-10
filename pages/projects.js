@@ -21,6 +21,12 @@ class Projects extends Component {
         this.state = {
             projects: [
                 {
+                    name: "PlanetScale DB / League of Legends Scraped Games",
+                    link: "https://6393a8edd3b1f2073221ba3a--teal-creponne-47065d.netlify.app/",
+                    code: "https://github.com/ZnMind/React-PlanetScale",
+                    format: "typing"
+                },
+                {
                     name: "Puppeteer/Express Webscraping",
                     link: "https://netlify-heroku-express-backend.netlify.app/",
                     code: "https://github.com/ZnMind/Puppeteer-React-Webscraping",
@@ -55,12 +61,6 @@ class Projects extends Component {
                     link: "https://62cf17b7e731572c6daa4ae0--magenta-mochi-f86254.netlify.app/",
                     code: "https://github.com/ZnMind/Just-My-Type",
                     format: "typing"
-                },
-                {
-                    name: 'REST API with Routers',
-                    link: 'https://62d081534791ac2c0f000eb6--velvety-lily-38f01f.netlify.app/',
-                    code: "https://github.com/ZnMind/Reacting-to-Routers",
-                    format: ""
                 },
                 {
                     name: "Tic-Tac-Toe",

@@ -91,14 +91,14 @@ const Page1 = () => {
                     <div>
                         <h4>Stack</h4>
                         <ul className="stack">
-                            <li>HTML</li>
+                            <li>HTML / JSX</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>Node</li>
                         </ul>
                         <ul className="stack">
                             <li>React</li>
-                            <li>NextJS</li>
+                            <li>Next.js</li>
                             <li>Express</li>
                             <li>MySQL</li>
                         </ul>

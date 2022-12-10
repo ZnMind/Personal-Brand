@@ -16,6 +16,10 @@
     text-align: start;
 }
 
+.column2 {
+    text-align: end;
+}
+
 .column {
     color: white;
     text-align: start;
