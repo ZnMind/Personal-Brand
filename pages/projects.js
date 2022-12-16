@@ -21,6 +21,12 @@ class Projects extends Component {
         this.state = {
             projects: [
                 {
+                    name: "Impermanent Loss Calculator",
+                    link: "https://639cc336e14c8804ddcc4ae3--mellow-fox-1e1a82.netlify.app/",
+                    code: "https://github.com/ZnMind/Impermanent-Loss-Calculator",
+                    format: "typing"
+                },
+                {
                     name: "PlanetScale DB / League of Legends Scraped Games",
                     link: "https://6393a8edd3b1f2073221ba3a--teal-creponne-47065d.netlify.app/",
                     code: "https://github.com/ZnMind/React-PlanetScale",
