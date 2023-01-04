@@ -33,16 +33,16 @@ class Projects extends Component {
                     format: "typing"
                 },
                 {
+                    name: "Redux Counter",
+                    link: "https://eloquent-gnome-3061a3.netlify.app/",
+                    code: "https://github.com/ZnMind/Redux-Beginnings",
+                    format: ""
+                },
+                {
                     name: "Puppeteer/Express Webscraping",
                     link: "https://netlify-heroku-express-backend.netlify.app/",
                     code: "https://github.com/ZnMind/Puppeteer-React-Webscraping",
                     format: "pup"
-                },
-                {
-                    name: 'REST API with React Pagination',
-                    link: "https://prismatic-brioche-997f72.netlify.app/",
-                    code: "https://github.com/ZnMind/React-REST-API-Pagination",
-                    format: "cc"
                 },
                 {
                     name: "Progress Bars OOP/DOM",

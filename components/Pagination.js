@@ -88,13 +88,7 @@ const Pagination = props => {
                         </div>
                         {data.name == 'Puppeteer/Express Webscraping' ?
                             <div className="info">
-                                Heroku is set to <a href="https://blog.heroku.com/next-chapter" target='_blank' id='hero-link'>end free dynos</a> November 28.
-                                <div>
-                                This project is experiencing slowdowns as a result, and
-                                </div>
-                                <div>
-                                its server will need to be migrated to another free hosting service.
-                                </div>
+                                Note: Heroku has <a href="https://blog.heroku.com/next-chapter" target='_blank' id='hero-link'>ended free dynos</a> as of November 28.
                             </div> :
                             ""}
                         <iframe src={data.link} className={`project${data.format}`} id={`target${index}`}></iframe>
