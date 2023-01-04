@@ -45,6 +45,12 @@ class Projects extends Component {
                     format: "pup"
                 },
                 {
+                    name: 'REST API with React Pagination',
+                    link: "https://prismatic-brioche-997f72.netlify.app/",
+                    code: "https://github.com/ZnMind/React-REST-API-Pagination",
+                    format: "cc"
+                },
+                {
                     name: "Progress Bars OOP/DOM",
                     link: "https://delicate-dodol-627aed.netlify.app/",
                     code: "https://github.com/ZnMind/Progress-Bars",
