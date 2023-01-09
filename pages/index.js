@@ -21,10 +21,15 @@ export default function Home() {
           <p className="description">
             This is the home of <span id='name'>Dan Mann</span> and his web portfolio
           </p>
-          <p>Check out the Navbar to get started or click on my links in the footer below</p>
+          <p>I am a full stack web developer with a thirst for learning. I am always looking for ways to challenge myself and grow, so if you have an opportunity let me know!</p>
+
+          <Logo />
+
+          <p><b>Front-End</b>: React/Redux, Next</p>
+          <p><b>Back-End</b>: Express, Node</p>
+          <p><b>Database</b>: MySQL, MongoDB</p>
         </Layout>
-        <Logo />
-        <p>Powered by <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>Next.js</a> / <a href='https://reactjs.org/' target='_blank' rel='noreferrer'>React</a></p>
+        {/* <p>Powered by <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>Next.js</a> / <a href='https://reactjs.org/' target='_blank' rel='noreferrer'>React</a></p> */}
       </div>
       <Anchor
         text="Page Source"

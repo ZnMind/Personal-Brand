@@ -107,7 +107,7 @@ const Page1 = () => {
             </div>
             <div className="contact">
                 <h3>Contact Me</h3>
-                <a href="mailto:tech.dmann@gmail.com?cc=damann1072@gmail.com&subject=Great%20Website!">tech.dmann@gmail.com</a>
+                <a href="mailto:damann1072@gmail.com?cc=tech.dmann@gmail.com&subject=Great%20Website!">damann1072@gmail.com</a>
                 <p>(205) 936-3366</p>
             </div>
         </>
