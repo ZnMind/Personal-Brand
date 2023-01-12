@@ -21,6 +21,12 @@ class Projects extends Component {
         this.state = {
             projects: [
                 {
+                    name: "MERN Full Stack App",
+                    link: "https://mongodb-frontend.netlify.app/",
+                    code: "https://github.com/ZnMind/MERN-stack-movies",
+                    format: "mern"
+                },
+                {
                     name: "Impermanent Loss Calculator",
                     link: "https://639cc336e14c8804ddcc4ae3--mellow-fox-1e1a82.netlify.app/",
                     code: "https://github.com/ZnMind/Impermanent-Loss-Calculator",
