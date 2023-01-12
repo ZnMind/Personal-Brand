@@ -80,9 +80,6 @@ const Navbar = () => {
                   nav a {
                     display: flex;
                     align-items: center;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    height: 100%;
                     text-decoration: none;
                   }
                   

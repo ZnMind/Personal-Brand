@@ -18,10 +18,13 @@ export default function Home() {
         <Layout title="Home">
 
           <Header title="Welcome!" />
-          <p className="description">
-            This is the home of <span id='name'>Dan Mann</span> and his web portfolio
+          
+
+          <p>
+            This is the home of <span id='name'>Dan Mann</span> and his web portfolio.
           </p>
           <p>I am a full stack web developer with a thirst for learning. I am always looking for ways to challenge myself and grow, so if you have an opportunity let me know!</p>
+          
 
           <Logo />
 

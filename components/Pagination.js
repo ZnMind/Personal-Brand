@@ -73,9 +73,9 @@ const Pagination = props => {
                 </button>
             </div>
 
-            <div className="dataContainer d-flex">
+            <div className="dataContainer">
                 {getPaginatedData().map((data, index) => (
-                    <div key={index} className="box d-flex">
+                    <div key={index} className="box">
                         <div className="info">
                             <a href={data.link} target='_blank' id='site-link'>
                                 {data.name}

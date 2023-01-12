@@ -33,7 +33,7 @@ const Pagination = props => {
                     className={`${styles.arrowbuttonCe} ${styles.arrowbuttonLCe} ${currentPage == 1 ? styles.disabled : ''}`}
                 />
 
-                <div className="dataContainer">
+                <div className="dataContainerCE">
                     {getPaginatedData().map((data, index) => (
                         <div key={index} className="box">
                             <div className="info">

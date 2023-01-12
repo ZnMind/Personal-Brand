@@ -60,7 +60,7 @@ const Page1 = () => {
         <>
             <div className="about-container1">
                 <div className="about-img">
-                    <img src="/images/Dan.jpg" height="480" width="640"></img>
+                    <img src="/images/Dan.jpg" className="imgs"></img>
                 </div>
                 <div className="about">
                     <p>
@@ -88,8 +88,8 @@ const Page1 = () => {
                         who is, I would love to get into
                         contact with you!
                     </p>
-                    <div>
                         <h4>Stack</h4>
+                    <div className="stack-container">
                         <ul className="stack">
                             <li>HTML / JSX</li>
                             <li>CSS</li>
@@ -115,15 +115,15 @@ const Page1 = () => {
 }
 
 const Page2 = () => {
-    return <img src="/images/Kait.jpg" height="600" width="800"></img>
+    return <img src="/images/Kait.jpg" className="imgs"></img>
 }
 
 const Page3 = () => {
-    return <img src="/images/Pup.jpg" height="640" width="480"></img>
+    return <img src="/images/Pup.jpg" className="imgs"></img>
 }
 
 const Page4 = () => {
-    return <img src="/images/Family.jpg" height="533.5" width="800"></img>
+    return <img src="/images/Family.jpg" className="imgs"></img>
 }
 
 const components = {
@@ -144,7 +144,7 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <div className="about-container">
+            <div>
                 <Layout title="About">
                     <h2 className="noM">Profile</h2>
                     <Pagination

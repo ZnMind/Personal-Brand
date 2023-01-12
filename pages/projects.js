@@ -102,7 +102,7 @@ class Projects extends Component {
                 <Navbar />
                 <Layout title="Projects">
                     <h2>Projects</h2>
-                    <div className='d-flex justify-center'>
+                    <div>
                         <Pagination
                             data={this.state.projects}
                         />

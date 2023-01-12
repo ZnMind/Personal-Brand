@@ -107,7 +107,10 @@ const Message = () => {
                 <header className="App-header">
                     <div className='message-container'>
                         <div className='left'>
+                            <div>
+
                             <h4>Please leave a message!</h4>
+                            </div>
 
                             <input placeholder='Name' onChange={handleName} maxLength="50" id="textfield1"></input>
                             <input placeholder='Message (140 char max)' onChange={handleMessage} maxLength="140" id="textfield2"></input>

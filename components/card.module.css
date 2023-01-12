@@ -26,6 +26,19 @@
     width: 600px;
 }
 
+@media screen and (max-width: 480px) {
+    .column1 {
+        width: 20vw;
+        text-align: start;
+    }
+
+    .column {
+        color: white;
+        text-align: start;
+        width: 50vw;
+    }
+}
+
 .small {
     color: black;
     font-size: small;

@@ -71,11 +71,32 @@ code {
 
 .resume {
   box-shadow: 6px 5px 1.5em gray;
+  height: 910px;
+  width: 705px;
 }
 
 .certificate {
   box-shadow: 6px 5px 1.5em black;
 }
+
+@media screen and (max-width: 480px) {
+  .project, .projectcc, .projectpup, .projecttyping {
+    width: 90vw;
+  }
+
+  .resume {
+    box-shadow: 6px 5px 1.5em gray;
+    width: 90vw;
+    height: 53vh;
+  }
+
+  .certificate {
+    box-shadow: 6px 5px 1.5em black;
+    width: 70vw;
+    height: 31vh;
+  }
+}
+
 
 #site-link {
   margin-bottom: 2em;
@@ -96,9 +117,19 @@ code {
 
 .dataContainer {
   text-align: center;
+  min-height: 55vh;
 }
 
-h1, h2, h4 {
+.dataContainerCE {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 55vh;
+}
+
+h1,
+h2,
+h4 {
   text-align: center;
   width: 100%;
   text-shadow: 2.5px 2.5px 0.1em black;
@@ -131,7 +162,7 @@ h1, h2, h4 {
 
 .about-container {
   display: flex;
-  padding: 1em;
+
   flex-wrap: nowrap;
   padding-left: calc(100vw - 100%);
   align-items: center;
@@ -140,7 +171,6 @@ h1, h2, h4 {
 
 .about-container1 {
   display: flex;
-  padding: 1em;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: center;
@@ -151,8 +181,11 @@ h1, h2, h4 {
   margin-right: 2em;
 }
 
+.imgs {
+  width: 640px;
+}
+
 .about {
-  margin-right: auto;
   text-align: start;
   width: 350px;
 }
@@ -161,6 +194,7 @@ h1, h2, h4 {
   display: inline-block;
   margin-right: 1em;
 }
+
 
 b {
   color: #61dafb;
@@ -222,12 +256,12 @@ a:hover {
 
 .anchor-link {
   color: #61dafb !important;
-  margin-top: -1em;
+  margin-top: 2vh;
   margin-bottom: 2vh;
   font-weight: 500;
   text-align: center;
   text-shadow: 2.5px 2.5px 0.1em black;
-  
+
 }
 
 .bott {
@@ -243,7 +277,8 @@ a:hover {
   font-size: 0.66em;
 }
 
-.anchor-link:hover,.anchor-link-sm:hover {
+.anchor-link:hover,
+.anchor-link-sm:hover {
   color: #0066ff !important;
 }
 
@@ -298,4 +333,53 @@ input {
 button {
   width: 5em;
   margin-bottom: 5em;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .dataContainer {
+    text-align: center;
+  }
+
+  .about-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-img,
+  .about,
+  .imgs {
+    width: 80vw;
+  }
+
+  .stack-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    flex-wrap: wrap;
+    margin-left: 1em;
+  }
 }

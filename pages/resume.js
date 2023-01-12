@@ -11,7 +11,7 @@ const Resume = () => {
             <Layout title="Resume">
                 <h2>Resume</h2>
                 <div>
-                    <iframe src="/images/Resume 9-22.pdf#toolbar=0&navpanes=0&scrollbar=0" height="910" width="705" className="resume"></iframe>
+                    <iframe src="/images/Resume 9-22.pdf#toolbar=0&navpanes=0&scrollbar=0"/*  height="910" width="705"  */className="resume"></iframe>
                 </div>
             </Layout>
             <Anchor
