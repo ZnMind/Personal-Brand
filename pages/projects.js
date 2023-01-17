@@ -27,6 +27,12 @@ class Projects extends Component {
                     format: "mern"
                 },
                 {
+                    name: "Playfair Cipher",
+                    link: "https://63c7255eb71e3047333eeeb4--silly-dieffenbachia-ea38d1.netlify.app/",
+                    code: "https://github.com/ZnMind/Playfair-Cipher",
+                    format: ""
+                },
+                {
                     name: "Impermanent Loss Calculator",
                     link: "https://639cc336e14c8804ddcc4ae3--mellow-fox-1e1a82.netlify.app/",
                     code: "https://github.com/ZnMind/Impermanent-Loss-Calculator",
