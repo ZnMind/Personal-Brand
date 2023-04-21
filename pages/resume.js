@@ -10,8 +10,13 @@ const Resume = () => {
             <Navbar />
             <Layout title="Resume">
                 <h2>Resume</h2>
+                <p style={{ marginTop: '0.25em', marginBottom: '0.25em' }}>Fun Fact: This resume is written entirely in React!</p>
+                {/* <p>It utilizes the Node.js package react-to-print to translate CSS stylings.</p> */}
+                <p style={{ marginTop: '0.25em' }}>{`Source code found `}
+                    <a href='https://github.com/ZnMind/Resume/blob/main/src/App.js' target='_blank' rel='noreferrer' className='anchor-link'>Here</a>!
+                </p>
                 <div>
-                    <iframe src="/images/Resume 9-22.pdf#toolbar=0&navpanes=0&scrollbar=0"/*  height="910" width="705"  */className="resume"></iframe>
+                    <iframe src="/images/DMann-react-resume.pdf#toolbar=0&navpanes=0&scrollbar=0"/*  height="910" width="705"  */ className="resume"></iframe>
                 </div>
             </Layout>
             <Anchor
