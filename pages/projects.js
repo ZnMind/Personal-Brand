@@ -45,12 +45,6 @@ class Projects extends Component {
                     format: "typing"
                 },
                 {
-                    name: "Redux Counter",
-                    link: "https://eloquent-gnome-3061a3.netlify.app/",
-                    code: "https://github.com/ZnMind/Redux-Beginnings",
-                    format: ""
-                },
-                {
                     name: "Puppeteer/Express Webscraping",
                     link: "https://netlify-heroku-express-backend.netlify.app/",
                     code: "https://github.com/ZnMind/Puppeteer-React-Webscraping",
