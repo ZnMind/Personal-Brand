@@ -88,18 +88,20 @@ const Page1 = () => {
                         who is, I would love to get into
                         contact with you!
                     </p>
-                        <h4>Stack</h4>
+                        <h4 style={{ marginBottom: '0.5em' }}>Stack</h4>
                     <div className="stack-container">
                         <ul className="stack">
-                            <li>HTML / JSX</li>
+                            <li>HTML5 / JSX</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>Node</li>
+                            <li>Express</li>
                         </ul>
                         <ul className="stack">
                             <li>React</li>
+                            <li>Redux</li>
                             <li>Next.js</li>
-                            <li>Express</li>
+                            <li>MongoDB</li>
                             <li>MySQL</li>
                         </ul>
                     </div>
