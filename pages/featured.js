@@ -6,36 +6,12 @@ import Footer from '@components/Footer';
 import artifice from '../public/images/Artifice.jpg';
 
 const Featured = () => {
-    /* let canvas = document.getElementById('canvas');
-    let ctx = canvas.getContext('2d');
-    let img = new Image();
-    img.onload = function () {
-
-        // set size proportional to image
-        canvas.height = canvas.width * (img.height / img.width);
-    
-        // step 1 - resize to 50%
-        var oc = document.createElement('canvas'),
-            octx = oc.getContext('2d');
-    
-        oc.width = img.width * 0.5;
-        oc.height = img.height * 0.5;
-        octx.drawImage(img, 0, 0, oc.width, oc.height);
-    
-        // step 2
-        octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
-    
-        // step 3, resize to final size
-        ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
-        0, 0, canvas.width, canvas.height);
-    }
-    img.src = "//i.imgur.com/SHo6Fub.jpg"; */
     return (
         <>
             <Navbar />
-            <Layout title="Projects">
-
-                <div>
+            <Layout title="Featured">
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '78vh' }}>
+                <div style={{ border: '1px solid #ffffff', padding: '2em', borderRadius: '10px', boxShadow: '5px 6px 0.25em black' }}>
                     <h2><a className='anchor-link' href='https://artifice.vercel.app' target='_blank' rel='noreferrer'>Artifice</a></h2>
                     <p>This is a pet project of mine and my most in-depth project</p>
                     <p>It began as an effort to learn Redux and turned into a full-fledged game</p>
@@ -45,11 +21,15 @@ const Featured = () => {
                     <p>{`If you would like to check it out, here is the `}
                         <a className='anchor-link' href='https://artifice.vercel.app' target='_blank' rel='noreferrer'>Link</a>!
                     </p>
+                    <p>{`In addition, the source code can be found `}
+                        <a className='anchor-link' href='https://github.com/ZnMind/Artifice' target='_blank' rel='noreferrer'>Here</a>!
+                    </p>
                     <p>( Not yet formatted for mobile users, Sorry! )</p>
-                    {/* <img src='/images/Artifice.jpg' style={{ height: '75vh', width: '75vw' }}></img> */}
+                    {/* <img src='/images/Artifice.png' style={{ height: '40vh', width: '40vw' }}></img> */}
+                    {/* <iframe src='https://artifice.vercel.app' width='800px' height='600px'></iframe> */}
+                </div>
                 </div>
             </Layout>
-
             <Footer />
         </>
     )

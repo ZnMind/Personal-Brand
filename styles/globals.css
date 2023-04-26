@@ -152,7 +152,7 @@ h4 {
 }
 
 .container {
-  height: 77vh;
+  min-height: 77vh;
   padding: 1vh;
   display: flex;
   flex-direction: column;

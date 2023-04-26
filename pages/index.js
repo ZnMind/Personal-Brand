@@ -16,22 +16,21 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Layout title="Home">
-
+          <div>
           <Header title="Welcome!" />
-          
 
           <p>
             This is the home of <span id='name'>Dan Mann</span> and his web portfolio.
           </p>
           <p>I am a full stack web developer who is always looking for ways to challenge myself and grow, so if you have an opportunity let me know!</p>
-          
+
 
           <Logo />
-          
-            <p><b>Languages</b>: JavaScript, HTML5, CSS, Python</p>
-            <p><b>Technologies</b>: React, Redux, Node.js, Express, Next.js</p>
-            <p><b>Database</b>: MongoDB, MySQL</p>
 
+          <p><b>Languages</b>: JavaScript, HTML5, CSS, Python</p>
+          <p><b>Technologies</b>: React, Redux, Node.js, Express, Next.js</p>
+          <p><b>Database</b>: MongoDB, MySQL</p>
+          </div>
         </Layout>
         {/* <p>Powered by <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>Next.js</a> / <a href='https://reactjs.org/' target='_blank' rel='noreferrer'>React</a></p> */}
       </div>

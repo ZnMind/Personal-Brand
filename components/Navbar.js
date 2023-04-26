@@ -30,15 +30,6 @@ const Navbar = () => {
                         }>About</a>
                     </Link>
                 </div>
-                {/* <div className={styles.next}>
-                    <Link href="/featured">
-                    <a className={
-                            `nav-link ${currentRoute === "/featured"
-                                ? "active"
-                                : "non-active"}`
-                        }>Featured</a>
-                    </Link>
-                </div> */}
                 <div className={styles.next}>
                     <Link href="/message">
                     <a className={
@@ -46,6 +37,15 @@ const Navbar = () => {
                                 ? "active"
                                 : "non-active"}`
                         }>Messages</a>
+                    </Link>
+                </div>
+                <div className={styles.next}>
+                    <Link href="/featured">
+                    <a className={
+                            `nav-link ${currentRoute === "/featured"
+                                ? "active"
+                                : "non-active"}`
+                        }>Featured</a>
                     </Link>
                 </div>
                 <div className={styles.next}>
