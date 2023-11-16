@@ -27,9 +27,9 @@ export default function Home() {
 
           <Logo />
 
-          <p><b>Languages</b>: JavaScript, HTML5, CSS, Python</p>
-          <p><b>Technologies</b>: React, Redux, Node.js, Express, Next.js</p>
-          <p><b>Database</b>: MongoDB, MySQL</p>
+          <p><b>Languages</b>: JavaScript (ES6), HTML5, CSS, Python</p>
+          <p><b>Technologies</b>: React, Redux, Node.js, Express.js, Next.js</p>
+          <p><b>Database</b>: MySQL, MongoDB, Firebase</p>
           </div>
         </Layout>
         {/* <p>Powered by <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>Next.js</a> / <a href='https://reactjs.org/' target='_blank' rel='noreferrer'>React</a></p> */}

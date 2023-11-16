@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import styles from '@components/Pagination.module.css';
 import Layout from "@components/Layout";
 import Navbar from "@components/Navbar";
@@ -45,7 +46,7 @@ const Pagination = props => {
             <div className="dataContainer">
                 {getPaginatedData().map((data, index) => (
                     <div key={index} className="box">
-                        <div className="info">
+                        <div className="info2">
                             {data}
                         </div>
                     </div>
@@ -60,7 +61,13 @@ const Page1 = () => {
         <>
             <div className="about-container1">
                 <div className="about-img">
-                    <img src="/images/Dan.jpg" className="imgs"></img>
+                    <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
+                        <Image
+                            src='/images/Dan.jpg'
+                            height={480}
+                            width={640}
+                        />
+                    </div>
                 </div>
                 <div className="about">
                     <p>
@@ -88,7 +95,7 @@ const Page1 = () => {
                         who is, I would love to get into
                         contact with you!
                     </p>
-                        <h4 style={{ marginBottom: '0.5em' }}>Stack</h4>
+                    <h4 style={{ marginBottom: '0.5em' }}>Stack</h4>
                     <div className="stack-container">
                         <ul className="stack">
                             <li>HTML5 / JSX</li>
@@ -117,15 +124,45 @@ const Page1 = () => {
 }
 
 const Page2 = () => {
-    return <img src="/images/Kait.jpg" className="imgs"></img>
+    return (
+        <>
+            <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
+                <Image
+                    src='/images/Kait.jpg'
+                    height={480}
+                    width={640}
+                />
+            </div>
+        </>
+    )
 }
 
 const Page3 = () => {
-    return <img src="/images/Pup.jpg" className="imgs"></img>
+    return (
+        <>
+            <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
+                <Image
+                    src='/images/Pup.jpg'
+                    height={853}
+                    width={640}
+                />
+            </div>
+        </>
+    )
 }
 
 const Page4 = () => {
-    return <img src="/images/Family.jpg" className="imgs"></img>
+    return (
+        <>
+            <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
+                <Image
+                    src='/images/Family.jpg'
+                    height={427}
+                    width={640}
+                />
+            </div>
+        </>
+    )
 }
 
 const components = {

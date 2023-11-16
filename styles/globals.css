@@ -258,6 +258,23 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.info2 {
+  margin-bottom: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-left: 1px solid #61dafb;
+  border-right: 1px solid #61dafb;
+}
+
+.circle {
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
 .anchor-link {
   color: #61dafb !important;
   margin-top: 2vh;
